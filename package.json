@@ -1,0 +1,33 @@
+{
+  "name": "imi-structured-item-name-parser",
+  "version": "1.0.0",
+  "description": "IMI Structured Item Name parser for Javascript",
+  "main": "main.js",
+  "files": [
+    "main.js"
+  ],
+  "scripts": {
+    "build": "pegjs --format umd --export-var IMIStructuredItemNameParser < spec/spec.pegjs | uglifyjs -m -c > main.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indigo-lab/imi-structured-item-name-parser.git"
+  },
+  "keywords": [
+    "imi",
+    "javascript"
+  ],
+  "author": "indigo-lab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indigo-lab/imi-structured-item-name-parser/issues"
+  },
+  "homepage": "https://github.com/indigo-lab/imi-structured-item-name-parser#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "pegjs": "^0.10.0",
+    "uglify-js": "^3.4.9"
+  }
+}
